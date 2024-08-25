@@ -1,0 +1,68 @@
+/* Write your CSS code here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-card1 {
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  width: 150px;
+}
+.menu-card1 {
+  display: flex;
+  align-items: center;
+}
+.link {
+  list-style-type: none;
+  margin-left: 25px;
+  color: #475569;
+  font-size: 20px;
+  cursor: pointer;
+}
+.logout-button {
+  margin-left: 25px;
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #0967d2;
+  cursor: pointer;
+  outline: none;
+}
+.nav-card2 {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .nav-card2 {
+    display: block;
+  }
+  .nav-card1 {
+    display: none;
+  }
+  .logo-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logout-icon {
+    width: 35px;
+  }
+  .menu-card2 {
+    background-color: #e6f6ff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
+  .menu-icon {
+    width: 30px;
+  }
+}

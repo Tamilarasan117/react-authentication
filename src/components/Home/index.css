@@ -1,0 +1,81 @@
+/* Write your CSS code here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.home-detail-container {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+}
+.content-card {
+  width: 50%;
+}
+.home-heading {
+  color: #1e293b;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.home-description {
+  color: #64748b;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.shop-button {
+  color: #ffffff;
+  background-color: #0b69ff;
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.home-img-card1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.home-img-card2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-img {
+  width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  .home-heading {
+    margin-top: 30px;
+  }
+  .home-img-card1 {
+    display: block;
+  }
+  .home-img {
+    width: 100%;
+  }
+  .content-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .home-img-card2 {
+    display: none;
+  }
+}
